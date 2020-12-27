@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý xe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Quản lý hãng vận tải đường dài</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quản lý thông tin</a>
+                        <div class="dropdown-menu">
+                            <a href="tourManagement.html" class="dropdown-item">Chuyến</a>
+                            <a href="staffManagement.html" class="dropdown-item">Nhân viên</a>
+                            <a href="vehicleManagement.html" class="dropdown-item">Xe</a>
+                            <a href="routeManagement.html" class="dropdown-item">Tuyến đường</a>
+                            <a href="routeComplexityManagement.html" class="dropdown-item">Độ phức tạp tuyến
+                                đường</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thống kê</a>
+                        <div class="dropdown-menu">
+                            <a href="vehicleAudit.html" class="dropdown-item">Thống kê doanh thu xe</a>
+                            <a href="salaryOfStaffAudit.html" class="dropdown-item">Thống kê lương nhân viên</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <h3 class="text-center m-4">Quản lý Xe</h3>
+    
+
+    <div class="container">
+        <button class="btn btn-danger mb-3">Thêm Xe</button>
+
+        <table class="table table-hover">
+            <thead class="table-danger">
+                <tr>
+                    <th>ID</th>
+                    <th>Biển số xe</th>
+                    <th>Màu sắc</th>
+                    <th>Nhà sản xuất</th>
+                    <th>Đời xe</th>
+                    <th>Model</th>
+                    <th>Số chỗ ngồi</th>
+                    <th>Số năm sử dụng</th>
+                    <th>Ngày bảo dưỡng gần nhất</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="vehicles">
+                <!-- <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer class="fixed-bottom text-center d-inline-block">
+    <a href="https://www.facebook.com/TXTung5/" class="justify-content"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+    <p>Made by TungTX</p>
+</footer>
+
+</html>
